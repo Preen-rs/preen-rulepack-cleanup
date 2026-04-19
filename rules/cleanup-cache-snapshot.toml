@@ -1,0 +1,25 @@
+schema_version = 1
+id = "cleanup-cache-snapshot"
+name = "Cache Snapshot"
+category = "Cache"
+risk = "Low"
+enabled = true
+
+[match]
+mode = "Paths"
+paths = ["~/Library/Caches", "~/.cache"]
+strategy = "Recursive"
+command = []
+parser = ""
+
+[action]
+action_type = "DiskUsageSnapshot"
+paths = ["~/Library/Caches", "~/.cache"]
+command = []
+mode = "Confirm"
+timeout_sec = 30
+allow_globs = false
+max_items = 50000
+package_manager = ""
+project_types = []
+params = { smart_care_capability = "cleanup", smart_care_review_hint = "Review large cache folders before cleanup" }
