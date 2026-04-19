@@ -14,7 +14,7 @@ This repository is a template for Preen rulepacks.
 - Do not request broad capabilities unless strictly required.
 - Keep `signing.sigstore = true`.
 - Keep `signing.identity` aligned with this repository:
-  - `https://github.com/<org>/<repo>/.github/workflows/release-manual.yml@refs/heads/main`
+    - `https://github.com/Preen-rs/preen-rulepack-cleanup/.github/workflows/release-manual.yml@refs/heads/main`
 - Never publish unsigned release revisions.
 
 ## Validation
